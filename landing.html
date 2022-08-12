@@ -27,6 +27,38 @@
       <div
         class="container px-4 mx-auto flex flex-wrap items-center justify-between"
       >
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="bg-white text-gray-900 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+            href="https://chapmannetwork.co.uk/"
+            >Tom Chapman's CV</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+                href="https://chapmannetwork.co.uk/server"
+                ><i
+                  class="lg:text-gray-900 text-gray-900 far fa-file-alt text-lg leading-lg mr-2"
+                ></i>
+                My server journey</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <main>
@@ -359,51 +391,6 @@
         <div class="p-4">
 
         </div>
-      </section>
-        <section class="pb-20 bg-gray-300 -mt-24">
-          <div class="p-1">
-            <div class="container mx-auto px-4">
-              <div class="flex flex-wrap items-center mt-32">
-                <div class="w-full md:w-1/12 px-4 mr-auto ml-auto">
-                  <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                    My home server
-                  </h3>
-                  <img>
-                
-                </img>
-
-                  <p
-                    class="font-light leading-relaxed mt-4 mb-4 text-black"
-                  >
-                    When my school were getting rid of old computers I asked if I could have one instead and now I have a home server running Proxmox as a hypervisor with many VMs running beneath it.
-                  </p>
-                  <p
-                    class="font-light leading-relaxed mt-0 mb-4 text-black"
-                  >
-                    The first goal of my server was to run Minecraft servers for my friends however I quickly moved on to many services such and a NAS, Pihole, a website, a vpn tunnel and a load balancer to mananage them all.
-                  </p>
-                  <p
-                    class="font-light leading-relaxed mt-0 mb-4 text-black"
-                  >
-                    For the NAS I use Nextcloud running in an Ubuntu Server VM. Nextcloud is an all round network software which supports multiple users, calander support, mail support, mail server support and loads of addons which increase it's functionality. The reason I use Nextcloud is for it's file management and synchronization across multiple devices and operating systems e.g It has an Android app which allows my family to access their family photos wherever and whenever. It also backups their phones and our family computer to store everything in the cloud.
-                  </p>
-                  <p
-                    class="font-light leading-relaxed mt-0 mb-4 text-black"
-                  >
-                    The VPN tunnel I setup uses OpenVPN to tunnel my network traffic back into my home network from anywhere in the world. This allows me to access my server and services without having to open them up to the internet, instead I can open just one port and forward all my traffic through that. I'm currently using that as I'm writing this as I'm on holiday and wouldn't normally be able to access my VMs.
-                  </p>
-                  <p
-                    class="font-light leading-relaxed mt-0 mb-4 text-black"
-                  >
-                    I use Kemp's Loadmaster as my load balancer because it's level 7 meaning it can detect the subdomain being accessed and redirect to that so if I want to access my proxmox instance I'll use "promox." in front of my domain name. The same goes for any of my other services. All services can be accessed through one domain and I only have to open port 443 on my router for all the traffic to go through plus every site has its own SSL certificate without setting them up Individually.
-                  </p>
-                </div>
-                <div class="p-4">
-                </div>
-              </div>
-            </div>
-          </div>
-          
       </section>
       <section class="relative py-20 bg-gray-900">
         <div class="container mx-auto px-4">
