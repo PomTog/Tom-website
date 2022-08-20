@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="./assets/img/favicon.png"
+      href="/assets/img/favicon.png"
     />
     <link
       rel="stylesheet"
@@ -31,16 +31,40 @@
           class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
         >
           <a
-            class="bg-white text-gray-900 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
             href="index.html"
             >Tom Chapman's CV</a
+          ><button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
           >
-          <a
-            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-            href="server.html"
-            >
-            My server journey
-            </a>
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="server.html"
+                >
+                My server journey</a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="dofe.html"
+                >
+                DofE</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <main>
@@ -61,7 +85,7 @@
                   Tom Chapman
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  This is a recap of the things I've done relating to computer science for my portfolio.
+                  This is a recap of the things I have done relating to computer science for my portfolio.
                 </p>
               </div>
             </div>
@@ -71,20 +95,6 @@
           class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
           style="height: 70px;"
         >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
         </div>
       </div>
       <section class="pb-20 bg-gray-300 -mt-24">
@@ -102,7 +112,7 @@
                   </div>
                   <h6 class="text-xl font-semibold">GCSE Results</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    Achieveing 9s for both maths and computer science in adition to earning 8s in physics and chemistry.
+                    Achieving 9s for both maths and computer science in addition to earning 8s in physics and chemistry.
                   </p>
                 </div>
               </div>
@@ -170,7 +180,7 @@
                   </div>
                   <h6 class="text-xl font-semibold">Individual projects</h6>
                   <p class="mt-2 mb-4 text-gray-600">
-                    I have completed many projects ranging from using a level L7 balancer to access my different server services from one encrypted domain to a fully working 4 bit binary minecraft calculator.
+                    I have completed many projects ranging from using a level L7 balancer to access my different server services from one encrypted domain to a fully working 4 bit binary Minecraft calculator.
                   </p>
                 </div>
               </div>
@@ -201,17 +211,17 @@
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-black"
               >
-                As mentioned before I worked with Atkins to create an "Airport signage project" which entails determining which language passengers getting off an airplane would speak determined by the origin location of the plane.
+                As mentioned before, I worked with Atkins to create an "Airport signage project" which entails determining which language passengers getting off an airplane would speak determined by the origin location of the plane.
               </p>
               <p
                 class="text-lg font-light leading-relaxed mt-0 mb-4 text-black"
               >
-                The main goals of the project was to retreive flight data from an API, cache that data, create a simplified API, source the origin infomation to calculate language spoken, display flight infomation on a sign hosted online.
+                The main goals of the project were to retrieve flight data from an API, cache that data, create a simplified API, source the origin information to calculate language spoken, display flight information on a sign hosted online.
               </p>
               <p
                 class="text-lg font-light leading-relaxed mt-0 mb-4 text-black"
               >
-                In the end we had a working project which acomplished the goals we set out to solve. I gained a lot of knowledge working with Andrew Riggs from Atkins on my work experience and I'm thankful I got the oppertunity.
+                In the end we had a working project which accomplished the goals we set out to solve. I gained a lot of knowledge working with Andrew Riggs from Atkins on my work experience and I am thankful I got the opportunity.
               </p>
               <a
                 href="https://github.com/PomTog/Predictive-Airport-Signage"
@@ -279,12 +289,12 @@
                 <p
                   class="text-lg font-light leading-relaxed mt-0 mb-4 text-white"
                 >
-                  We learnt to create USB to Serial interfaces using PCBs, some soldure and the connectors which we then used with the serial interface on the car to administer commands to it.
+                  We learnt to create USB to Serial interfaces using PCBs, some solder, and the connectors which we then used with the serial interface on the car to administer commands to it.
                 </p>
                 <p
                   class="text-lg font-light leading-relaxed mt-0 mb-4 text-white"
                 >
-                  Initally this was trial and error as we didn't know the codes which corresponded to intrustion but by reading the output of the car we got an understanding of which code meant which we used to our advantage.
+                  Initially this was trial and error as we didn't know the codes which corresponded to each instruction but by reading the output of the car we got an understanding of which code meant which we used to our advantage.
                 </p>
               </div>
               <div class="p-4">
@@ -594,21 +604,9 @@
           <div class="w-full lg:w-6/12 px-4">
             <h4 class="text-3xl font-semibold">Thank you for reading!</h4>
             <h5 class="text-lg mt-0 mb-2 text-gray-700">
-              This his been my progress so far and will update this page when I have more to share.
+              This has been my progress so far and will update this page when I have more to share.
             </h5>
           </div>
-          <div class="w-full lg:w-6/12 px-4">
-            <div class="flex flex-wrap items-top mb-6">
-              <div class="w-full lg:w-4/12 px-4 ml-auto">
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr class="my-6 border-gray-400" />
-        <div
-          class="flex flex-wrap items-center md:justify-between justify-center"
-        >
         </div>
       </div>
     </footer>

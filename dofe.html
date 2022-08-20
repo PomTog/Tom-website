@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" href="/assets/img/favicon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="/assets/img/favicon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
-    />
-    <title>Tom Chapman's Server Journey</title>
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="shortcut icon" href="/assets/img/favicon.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="/assets/img/favicon.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+        />
+        <title>Tom Chapman's DofE Journey</title>
+    </head>
   <body class="text-gray-800 antialiased">
     <nav
       class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 "
@@ -74,7 +74,7 @@
       >
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
-          style='background-image: url("https://media.istockphoto.com/photos/dark-servers-data-center-room-with-computers-and-storage-systems-3d-picture-id1208019991?k=20&m=1208019991&s=612x612&w=0&h=jVZYsJqmjr36g41TSXZn-C82ZZIEbpo5Eqq4_2SNuKM=");'
+          style='background-image: url("https://mm.aiircdn.com/305/5c86622a8ccb4.jpg");'
         >
           <span
             id="blackOverlay"
@@ -86,68 +86,81 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                    My server journey
+                  Duke of Edinburgh Bronze
                 </h1>
                 <p class="mt-4 text-lg text-gray-300">
-                  This page is about my journey using server software and operating systems on a spare computer which I got from school.
+                  The Duke of Edinburgh award requires a person to complete 3 sections of challenges over a long period of time to receive their award for bronze it is 7 weeks for 2 of the challenges and 14 weeks for the third. Once these are completed, they are required to complete a 20-mile expedition.
                 </p>
               </div>
             </div>
           </div>
         </div>
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px;"
+        >
+        </div>
       </div>
-      <section class="pb-20 -mt-24">
+      <section class="pb-20 bg-gray-300 -mt-24">
         <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-xl font-semibold">Physical</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    The physical section pushes you to use energy and build yourself a better body.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-xl font-semibold">Skills</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    The skill section aims to improve your proficiency in your chosen skill over the designated time.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="pt-6 w-full md:w-4/12 px-4 text-center">
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <h6 class="text-xl font-semibold">Volunteering</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    For this section you need to improve your community or environment through Volunteering.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Server V1: Truenas
+                Physical
               </h3>
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
               >
-                Initially I used Truenas as my operating system as I only intended to use my server as a NAS (Network Attached Storage)
-              </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
-              >
-                I originally chose to create a NAS to store our family photos which we have 19 years worth roughly equating to 500GB.
-              </p>
-              <p
-                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
-              >
-                For the storage I salvaged hard drives from old computers and external storage drives then grouped them together in a pool using raid 1.
+                For the physical challenge I played field hockey for the MK hockey team for my age bracket. I continued playing after DofE for about another year.
               </p>
             </div>
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
               <div
-                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-gray-900"
               >
                 <img
                   alt="..."
-                  src="https://pbs.twimg.com/profile_images/1445829681270251525/ykuR5Gtl_400x400.png"
-                  class="w-full align-middle rounded-t-lg"
+                  src="https://img.olympicchannel.com/images/image/private/t_16-9_3200/primary/b2unl1gppjiic0fld0em"
+                  class="w-full align-middle rounded-lg"
                 />
-                <blockquote class="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    class="absolute left-0 w-full block"
-                    style="height: 95px; top: -94px;"
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      class="text-pink-600 fill-current"
-                    ></polygon>
-                  </svg>
-                  <h4 class="text-xl font-bold text-white">
-                    Truenas
-                  </h4>
-                  <p class="text-md font-light mt-2 text-white">
-                    Truenas is a server class operating system used for network attached storage operations. It uses drives in a raid array to store data which can be accessed over the network.
-                  </p>
-                </blockquote>
               </div>
             </div>
           </div>
@@ -179,14 +192,14 @@
               <img
                 alt="..."
                 class="max-w-full rounded-lg shadow-lg"
-                src="https://camo.githubusercontent.com/2df2ac41e1b8a1484be236c75e395981b31bfd670eff46b5c182ea0be9475310/68747470733a2f2f7777772e70726f786d6f782e636f6d2f696d616765732f70726f786d6f782f50726f786d6f785f73796d626f6c5f7374616e646172645f6865782e706e67"
+                src="assets/img/plane.jpg"
               />
             </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
-                <h3 class="text-3xl font-semibold">Server V2: Proxmox</h3>
+                <h3 class="text-3xl font-semibold">Skills</h3>
                 <p class="mt-4 text-lg leading-relaxed text-gray-600">
-                  After realising I wanted to do more with my server than just a NAS, I switched to Proxmox which is a hypervisor. A hypervisor is an operating system which has the main goal of running virtual machines. I created many virtual machines including a reverse proxy, a Minecraft server, a NAS, a webserver for this website, a VPN and many more. However, over time I learned there was a more efficient way of running many services on one server...
+                  For the skills section I built a carboard RC plane over a span of 7 weeks which in the end I crashed but it still got off the ground.
                 </p>
               </div>
             </div>
@@ -216,9 +229,9 @@
         <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
           <div class="flex flex-wrap text-center justify-center">
             <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-4xl font-semibold text-white">Server V3: Docker</h2>
+              <h2 class="text-4xl font-semibold text-white">Volunteering</h2>
               <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
-                Recently I have transitioned all my services to Docker which is a containerisation service. Containers are different to virtual machines because containers use the host operating system's kernel whereas a virtual machine will create a new kernel for each VM, this is very resource intensive, so a container is better because it uses less resources but has the same properties, isolated, fast and secure. I have created containers for the same services I had VMs for and now each service uses vastly less resources.
+                For volunteering I worked as a helper for my local beaver group (young version of scouts) as I was in scouts for many years and wanted to give back.
               </p>
             </div>
           </div>
@@ -226,36 +239,36 @@
       </section>
     </main>
     <footer class="relative bg-gray-300 pt-8 pb-6">
-        <div
-          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-          style="height: 80px;"
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
         >
-          <svg
-            class="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              class="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
-        </div>
-        <div class="container mx-auto px-4">
-          <div class="flex flex-wrap">
-            <div class="w-full lg:w-6/12 px-4">
-              <h4 class="text-3xl font-semibold">Thats it!</h4>
-              <h5 class="text-lg mt-0 mb-2 text-gray-700">
-                This has been my server journey so far and I have some plans for improvements in the future so I'll keep this page updated.
-              </h5>
-            </div>
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold">Thank you for reading!</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              That has been my dofe adventure.
+            </h5>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
   <script>
     function toggleNavbar(collapseID) {
